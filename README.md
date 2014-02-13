@@ -4,16 +4,6 @@ This is a kata where the goal is to build a ruby gem that monitors a web page fo
 
 Have a look [over there](http://codingdojo.org/cgi-bin/wiki.pl?WhatIsCodingDojo) for more information on dojos and katas. See the kata specifications below.
 
-<!--
-
-Have ready:
-
-- a rails app to test stuff
-- a mailer using Mail and a group gmail account for credentials
-- a gem skeleton
-
--->
-
 # Feature #1
     
 - Given we are just getting started
@@ -33,13 +23,13 @@ Have ready:
 - Then the app should not flag a change
 
 <note>
-You could also make sure you don't flag a change when the nonce of a form changed.
+You could also make sure you don't flag a change when only the authenticity token of a form changed.
 </note>
 
 # Feature #4
 
 - Given the content of the `head` tag is not interesting to me
-- When the content of the `head` tag changes
+- When only the content of the `head` tag changes
 - Then the app should not flag a change
 
 # Feature #5
