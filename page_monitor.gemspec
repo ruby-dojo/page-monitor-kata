@@ -6,8 +6,8 @@ require 'page_monitor/version'
 Gem::Specification.new do |spec|
   spec.name          = "page_monitor"
   spec.version       = PageMonitor::VERSION
-  spec.authors       = ["Matthieu Tanguay-Carel"]
-  spec.email         = ["matthieutc@gmail.com"]
+  spec.authors       = ["Rockstar Temple"]
+  spec.email         = ["rockstar@example.org"]
   spec.description   = %q{TODO: Write a gem description}
   spec.summary       = %q{TODO: Write a gem summary}
   spec.homepage      = ""
