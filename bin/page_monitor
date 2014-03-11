@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'page_monitor'
+
+PageMonitor.run

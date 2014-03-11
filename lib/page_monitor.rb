@@ -1,5 +1,8 @@
 require "page_monitor/version"
 
 module PageMonitor
-  # Your code goes here...
+
+  def self.run
+    puts "Your code goes here"
+  end
 end
