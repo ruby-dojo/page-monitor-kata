@@ -14,7 +14,7 @@ A simple function that takes in two strings and returns true or false will do.
 # Feature #2
     
 - Given we are just getting started
-- When the user calls the command line app passing in a URL in option
+- When I pass in a URL to the `fetch` function
 - Then the app fetches the web page at the URL and saves it to disk
 
 You can require `open-uri` and use the global function `open` to fetch the URL.
@@ -22,8 +22,8 @@ You can require `open-uri` and use the global function `open` to fetch the URL.
 # Feature #3
 
 - Given the app has already saved a previous state for the specified URL
-- When the user calls the app again with the same URL
-- Then the app fetches the web page and compares the current content with the content saved to disk
+- When we fetch the same URL again
+- Then the app fetches the web page again and compares the current content with the content saved to disk
 
 Return true if the content is the same, or false if it changed.
 
@@ -51,9 +51,19 @@ You could support a list of uninteresting tags (e.g. `input`, `button`, `form`)
 
 # Feature #7
 
-- Given the app is ready to ship
+- Given the app needs to work as a gem
 - When I install the gem
 - Then I am able to use it by running the executable on the path
+
+Make sure your code is hooked with the executable in the `bin` directory.
+
+Test your gem like so:
+
+    gem build page_monitor.gemspec
+
+    gem install page_monitor-0.0.1.gem
+
+And the executable should be on your path.
 
 # License
 
